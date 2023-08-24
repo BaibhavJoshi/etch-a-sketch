@@ -9,6 +9,7 @@
 body{
     font-family:'Montserrat', sans-serif;
     letter-spacing: 1em;
+    background-color:#a2d2ff;
 }
 
 .main{
@@ -23,7 +24,7 @@ body{
 .header{
     font-size:xx-large;
     margin:1.5em;
-    margin-left:8.7em;   
+    margin-left:9em;   
 }
 
 .primary-container{
@@ -36,7 +37,7 @@ body{
 }
 
 .settings{
-    width:10%;
+    width:300px;
     height:70%;
 
     display:flex;
@@ -46,7 +47,7 @@ body{
     
     gap:2em;
 
-    margin-top:1em;
+    margin-top:4em;
 }
 
 .pixel{
@@ -56,8 +57,8 @@ body{
 
 .board{
     display:grid;
-    width:40%;
-    height:75%;
+    width:900px;
+    height:700px;
 
     border:2px solid black;
     border-radius:5px;
@@ -65,7 +66,7 @@ body{
 }
 
 button{
-    width:100%;
+    width:80%;
     height:10%;
     cursor:pointer;
     letter-spacing: 0.2em;
@@ -108,8 +109,8 @@ input[type="color"]{
     -moz-appearance:none;
     appearance:none;
     background-color:transparent;
-    width:7em;
-    height:7em;
+    width:9em;
+    height:9em;
     cursor:pointer;
     border:none;
 }
@@ -134,8 +135,92 @@ input[type="color"]:active{
     font-weight:bold;
     text-align:center;
     line-height:1.5em;
+
+    width:300px;
 }
 
 .input-range{
     width:100%;
+}
+
+
+@media (min-width: 1980px){
+    .header{
+        margin-left:12em;   
+    }
+}
+
+@media (max-width: 1700px){
+
+    .board{
+        width:900px;
+        height:500px;
+    }
+
+}
+
+@media (max-width: 1500px){
+    .header{
+        margin-left:8em;   
+    }
+}
+
+@media (max-width: 1200px){
+    .board{
+        width:700px;
+    }
+
+    .header{
+        margin-left:7em;
+    }
+
+    .settings{
+        width:300px;
+    }
+
+    .board-size-input{
+        width:300px;
+    }
+    
+}
+
+@media (max-width: 900px){
+    .main{
+        width:100%;
+    }
+    .header{
+        text-align:center;
+        display:block;
+        margin:0 auto;
+        font-size:large;
+    }
+
+    .header h1{
+        padding:1em;
+    }
+
+
+    .primary-container{
+        display:flex;
+        flex-direction:column-reverse;
+        justify-content:center;
+        align-items:center;
+    }
+
+    .settings{
+        margin-top:0;
+    }
+    
+    .board{
+        width:80%;
+    }
+
+    .board-size-input{
+        width:300px;
+    }
+
+    button{
+        height:2.5em;
+    }
+    
 }
