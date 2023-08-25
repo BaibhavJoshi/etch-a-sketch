@@ -19,14 +19,14 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
                 <div class="color-box">
                     <input type="color" id="pencil-color" value="#09078d">
                 </div>
-                <button id="standardBtn">PENCIL</button>
-                <button id="rainbowBtn">RAINBOW</button>
-                <button id="eraserdBtn">ERASER</button>
-                <button id="cleardBtn">CLEAR</button>
+                <button id="pencilBtn" onclick="setMode('pencil')">PENCIL</button>
+                <button id="rainbowBtn" onclick="setMode('rainbow')">RAINBOW</button>
+                <button id="eraserBtn" onclick="setMode('eraser')">ERASER</button>
+                <button id="clearBtn" onclick="clearBoard()">CLEAR</button>
 
                 <div class="board-size-input">
                     <span id="range-value"> 20 <i class="fa fa-light fa-xmark"></i> 20 </span>
-                    <input type="range" class="input-range" min="1" max="128" value="20">
+                    <input type="range" class="input-range" id="input-range" min="1" max="128" value="20">
                 </div>
             </div>
             <div class="board" id="board"></div>
